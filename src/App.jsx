@@ -8,11 +8,13 @@ import Shop from './components/Facility'
 import Project from './components/Project'
 import Location from './components/Location'
 import Footer from './components/Footer'
+import VoiceAgent from './components/VoiceAgent'
 
 const App = () => {
   return (
     <div >
       <Navbar />
+      <VoiceAgent />
       <Services />
       <MainServices />
       <Working />

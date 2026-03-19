@@ -1,64 +1,143 @@
-import React from 'react';
-import strategyImage from '../all_assets/circle_img.webp'; 
+import React, { useEffect, useRef, useState } from 'react';
+import strategyImage from '../all_assets/circle_img.webp';
+
+const progressData = [
+  { title: 'Customer Satisfaction', percentage: 92, color: 'bg-blue-600', light: 'bg-blue-100', text: 'text-blue-600' },
+  { title: 'Print Quality',         percentage: 95, color: 'bg-yellow-400', light: 'bg-yellow-50', text: 'text-yellow-500' },
+  { title: 'On-Time Delivery',      percentage: 89, color: 'bg-emerald-500', light: 'bg-emerald-50', text: 'text-emerald-600' },
+  { title: 'Repeat Business',       percentage: 85, color: 'bg-purple-500', light: 'bg-purple-50', text: 'text-purple-600' },
+  { title: 'Innovation',            percentage: 90, color: 'bg-orange-500', light: 'bg-orange-50', text: 'text-orange-500' },
+];
 
 const Strategy = () => {
-  // Sample data for the progress bars
-  const progressData = [
-    { title: 'Customer Satisfaction', percentage: 92, color: 'bg-blue-600' },
-    { title: 'Print Quality', percentage: 95, color: 'bg-green-600' },
-    { title: 'On-Time Delivery', percentage: 89, color: 'bg-yellow-500' },
-    { title: 'Repeat Business', percentage: 85, color: 'bg-purple-600' },
-    { title: 'Innovation', percentage: 90, color: 'bg-red-500' },
-  ];
+  const [animated, setAnimated] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setAnimated(true); },
+      { threshold: 0.2 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <div className="bg-white py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
-          {/* Left Side - Image */}
-          <div className="lg:w-1/2 w-full">
-            <img 
-              src={strategyImage} 
-              alt="Our Strategy" 
-              className="rounded-lg shadow-xl w-full h-auto object-cover"
-            />
+    <section ref={sectionRef} className="relative bg-white py-20 px-4 sm:px-6 lg:px-10 overflow-hidden">
+
+      {/* Decorative background shapes */}
+      <div className="absolute top-0 right-0 w-80 h-80 bg-blue-50 rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-yellow-50 rounded-full -translate-x-1/3 translate-y-1/3 pointer-events-none" />
+
+      <div className="relative z-10 max-w-6xl mx-auto">
+        <div className="flex flex-col lg:flex-row gap-12 xl:gap-20 items-center">
+
+          {/* ── LEFT: Image ── */}
+          <div className="w-full lg:w-1/2">
+            <div className="relative">
+              {/* Decorative ring behind image */}
+              <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-blue-100 via-yellow-100 to-blue-50 blur-sm" />
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src={strategyImage}
+                  alt="Our Strategy"
+                  className="w-full h-auto object-cover"
+                />
+                {/* Overlay badge */}
+                <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-xl px-5 py-3 flex items-center justify-between shadow-lg">
+                  <div className="text-center">
+                    <p className="text-blue-700 font-extrabold text-xl">24+</p>
+                    <p className="text-gray-500 text-xs font-medium">Years Experience</p>
+                  </div>
+                  <div className="w-px h-8 bg-gray-200" />
+                  <div className="text-center">
+                    <p className="text-blue-700 font-extrabold text-xl">50000+</p>
+                    <p className="text-gray-500 text-xs font-medium">Happy Clients</p>
+                  </div>
+                  <div className="w-px h-8 bg-gray-200" />
+                  <div className="text-center">
+                    <p className="text-blue-700 font-extrabold text-xl">10000+</p>
+                    <p className="text-gray-500 text-xs font-medium">Projects Done</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Right Side - Content */}
-          <div className="lg:w-1/2 w-full">
-            {/* Main Heading */}
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">OUR STRATEGY</h2>
-            
-            {/* Sub Heading */}
-            <h3 className="text-3xl font-semibold text-blue-600 mb-6">ENERGY QUALITY COMMITMENT</h3>
-            
-            {/* Description Text */}
-            <p className="text-lg text-gray-600 mb-10 leading-relaxed">
+          {/* ── RIGHT: Content ── */}
+          <div className="w-full lg:w-1/2">
+
+            {/* Badge */}
+            <span className="inline-block bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-[0.18em] px-4 py-1.5 rounded-full border border-blue-100 mb-4">
+              Why Choose Us
+            </span>
+
+            {/* Heading */}
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 uppercase tracking-wide mb-2">
+              Our <span className="text-blue-700">Strategy</span>
+            </h2>
+            <h3 className="text-lg sm:text-xl font-bold text-yellow-500 uppercase tracking-widest mb-4">
+              Energy · Quality · Commitment
+            </h3>
+
+            {/* Divider */}
+            <div className="flex items-center gap-3 mb-5">
+              <div className="h-1 w-10 bg-blue-700 rounded-full" />
+              <div className="h-1 w-4 bg-yellow-400 rounded-full" />
+            </div>
+
+            {/* Description */}
+            <p className="text-gray-500 text-sm sm:text-base leading-relaxed mb-8">
               Outcome satisfaction is our top priority. Your feedback helps us
-              continue to improve and deliver even better service: 100%
+              continue to improve and deliver even better service — every single time, with <span className="text-blue-700 font-bold">100% dedication.</span>
             </p>
 
             {/* Progress Bars */}
-            <div className="space-y-6">
+            <div className="space-y-4">
               {progressData.map((item, index) => (
-                <div key={index}>
-                  <div className="flex justify-between mb-2">
-                    <span className="text-base font-medium text-gray-700">{item.title}</span>
-                    <span className="text-sm font-medium text-gray-500">{item.percentage}%</span>
+                <div key={index} className="group">
+                  <div className="flex items-center justify-between mb-1.5">
+                    <div className="flex items-center gap-2">
+                      <span className={`w-2 h-2 rounded-full ${item.color} flex-shrink-0`} />
+                      <span className="text-sm font-semibold text-gray-700">{item.title}</span>
+                    </div>
+                    <span className={`text-sm font-extrabold ${item.text}`}>{item.percentage}%</span>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-3">
-                    <div 
-                      className={`${item.color} h-3 rounded-full`} 
-                      style={{ width: `${item.percentage}%` }}
-                    ></div>
+                  <div className={`w-full ${item.light} rounded-full h-2.5 overflow-hidden`}>
+                    <div
+                      className={`${item.color} h-2.5 rounded-full transition-all duration-1000 ease-out`}
+                      style={{ width: animated ? `${item.percentage}%` : '0%', transitionDelay: `${index * 120}ms` }}
+                    />
                   </div>
                 </div>
               ))}
             </div>
+
+            {/* CTA */}
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="https://wa.me/917645980320"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-bold text-sm uppercase tracking-widest px-6 py-3 rounded-xl shadow-lg hover:-translate-y-0.5 hover:shadow-blue-400/40 transition-all duration-200"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                Order Now
+              </a>
+              <a
+                href="#services"
+                className="inline-flex items-center gap-2 bg-white border-2 border-blue-700 text-blue-700 hover:bg-blue-50 font-bold text-sm uppercase tracking-widest px-6 py-3 rounded-xl hover:-translate-y-0.5 transition-all duration-200"
+              >
+                View Services
+              </a>
+            </div>
+
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

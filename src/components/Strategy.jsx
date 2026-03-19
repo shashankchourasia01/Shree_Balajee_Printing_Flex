@@ -114,7 +114,7 @@ const Strategy = () => {
             </div>
 
             {/* CTA */}
-            <div className="mt-8 flex flex-wrap gap-3">
+            {/* <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="https://wa.me/917645980320"
                 target="_blank"
@@ -132,7 +132,7 @@ const Strategy = () => {
               >
                 View Services
               </a>
-            </div>
+            </div> */}
 
           </div>
         </div>

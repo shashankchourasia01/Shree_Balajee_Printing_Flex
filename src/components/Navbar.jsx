@@ -146,8 +146,8 @@ const NavbarWithHero = () => {
           </button>
         </div>
 
-        {/* Sidebar Nav Links */}
-        <nav className="flex-1 flex flex-col px-4 py-5 gap-1">
+        {/* Sidebar Nav Links + Buttons */}
+        <nav className="flex flex-col px-4 py-5 gap-1">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -159,31 +159,32 @@ const NavbarWithHero = () => {
               {link.label}
             </a>
           ))}
-        </nav>
 
-        {/* Sidebar Footer */}
-        <div className="px-4 pb-8 pt-4 border-t border-blue-100 flex flex-col gap-3">
-          <a
-            href="tel:+917645980320"
-            className="flex items-center gap-3 bg-white/45 hover:bg-white/70 border border-blue-200 hover:border-blue-600 text-blue-900 font-bold text-sm px-4 py-3 rounded-xl transition-all duration-200"
-          >
-            <svg className="w-4 h-4 text-blue-700 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-            </svg>
-            7645980320
-          </a>
-          <a
-            href="https://wa.me/917645980320"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-bold text-sm uppercase tracking-widest px-4 py-3.5 rounded-xl shadow-lg hover:-translate-y-0.5 hover:shadow-blue-400/40 transition-all duration-200"
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-            </svg>
-            Order Now
-          </a>
-        </div>
+          {/* Phone + Order Now — Contact ke just niche, IVR widget ke upar visible */}
+          <div className="mt-5 flex flex-col gap-3 px-1">
+            <a
+              href="tel:+917645980320"
+              className="flex items-center gap-3 bg-white/45 hover:bg-white/70 border border-blue-200 hover:border-blue-600 text-blue-900 font-bold text-sm px-4 py-3 rounded-xl transition-all duration-200"
+            >
+              <svg className="w-4 h-4 text-blue-700 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              7645980320
+            </a>
+            <a
+              href="https://wa.me/917645980320"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-bold text-sm uppercase tracking-widest px-4 py-3.5 rounded-xl shadow-lg hover:-translate-y-0.5 hover:shadow-blue-400/40 transition-all duration-200"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              </svg>
+              Order Now
+            </a>
+          </div>
+        </nav>
       </div>
 
       {/* ── HERO SECTION ── */}

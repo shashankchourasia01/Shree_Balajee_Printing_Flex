@@ -1,68 +1,131 @@
 import React from 'react';
 import { FaRegCalendarCheck, FaRegEnvelope, FaRegCheckCircle, FaPrint } from 'react-icons/fa';
 
+const steps = [
+  {
+    icon: <FaRegCalendarCheck className="text-2xl" />,
+    step: "01",
+    title: "Booking Offline / Online",
+    description: "Submit your project details via WhatsApp, call, or walk in — and receive a personalized quote instantly.",
+    color: "from-blue-500 to-blue-700",
+    light: "bg-blue-50 text-blue-600 border-blue-100",
+  },
+  {
+    icon: <FaRegEnvelope className="text-2xl" />,
+    step: "02",
+    title: "Received Work",
+    description: "Our design team reviews your requirements and sends a proof for approval. Revisions until you're 100% satisfied.",
+    color: "from-yellow-400 to-orange-400",
+    light: "bg-yellow-50 text-yellow-600 border-yellow-100",
+  },
+  {
+    icon: <FaRegCheckCircle className="text-2xl" />,
+    step: "03",
+    title: "Satisfied Design",
+    description: "Once you approve the final design, we lock it in and prepare everything for the printing process.",
+    color: "from-green-500 to-emerald-600",
+    light: "bg-green-50 text-green-600 border-green-100",
+  },
+  {
+    icon: <FaPrint className="text-2xl" />,
+    step: "04",
+    title: "Start Printing",
+    description: "Your prints are produced using top-of-the-line technology, then carefully packaged and handed over to you.",
+    color: "from-purple-500 to-indigo-600",
+    light: "bg-purple-50 text-purple-600 border-purple-100",
+  },
+];
+
 const Working = () => {
   return (
-    <div id='works' className="relative py-20 bg-gray-50">
-      {/* Background */}
-      <div className="absolute inset-0 bg-blue-900 opacity-5"></div>
-      
-      {/* Content */}
-      <div className="container mx-auto px-4 relative z-10">
-        {/* Headings */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Working Process</h2>
-          <h3 className="text-2xl font-semibold text-blue-600">HOW IT WORKS</h3>
-        </div>
-        
-        {/* Process Steps */}
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
-          {/* Step 1: Booking Online */}
-          <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
-            <div className="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-              <FaRegCalendarCheck className="text-blue-600 text-2xl" />
-            </div>
-            <h4 className="text-xl font-bold text-gray-800 mb-2">Booking Offline/Online</h4>
-            <p className="text-gray-600">
-              Submit your project details and receive a personalized quote.
-            </p>
-          </div>
-          
-          {/* Step 2: Received Work */}
-          <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
-            <div className="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-              <FaRegEnvelope className="text-blue-600 text-2xl" />
-            </div>
-            <h4 className="text-xl font-bold text-gray-800 mb-2">Received Work</h4>
-            <p className="text-gray-600">
-              Our design team creates and sends you a proof for approval. Revisions can be made until you're satisfied.
-            </p>
-          </div>
-          
-          {/* Step 3: Satisfied Design */}
-          <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
-            <div className="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-              <FaRegCheckCircle className="text-blue-600 text-2xl" />
-            </div>
-            <h4 className="text-xl font-bold text-gray-800 mb-2">Satisfied Design</h4>
-            <p className="text-gray-600">
-              Confirm your design, and we prepare for the printing process.
-            </p>
-          </div>
-          
-          {/* Step 4: Start Printing */}
-          <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
-            <div className="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-              <FaPrint className="text-blue-600 text-2xl" />
-            </div>
-            <h4 className="text-xl font-bold text-gray-800 mb-2">Start Printing</h4>
-            <p className="text-gray-600">
-              Your prints are produced using top-of-the-line technology, then packaged and gives to you.
-            </p>
+    <section id="works" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 overflow-hidden">
+
+      {/* Decorative background circles */}
+      <div className="absolute top-0 right-0 w-80 h-80 bg-blue-100 rounded-full translate-x-1/2 -translate-y-1/2 blur-3xl opacity-60 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-yellow-100 rounded-full -translate-x-1/3 translate-y-1/3 blur-3xl opacity-60 pointer-events-none" />
+
+      <div className="relative z-10 max-w-6xl mx-auto">
+
+        {/* Section Header */}
+        <div className="text-center mb-14">
+          <span className="inline-block bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-[0.2em] px-5 py-1.5 rounded-full mb-4">
+            Simple & Fast
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3">
+            Working <span className="text-blue-700">Process</span>
+          </h2>
+          <p className="text-gray-500 text-sm sm:text-base max-w-lg mx-auto">
+            From booking to delivery — just 4 easy steps to get your perfect print.
+          </p>
+          <div className="flex items-center justify-center gap-3 mt-5">
+            <div className="h-px w-16 bg-blue-200" />
+            <div className="w-2 h-2 rounded-full bg-blue-600" />
+            <div className="h-px w-16 bg-blue-200" />
           </div>
         </div>
+
+        {/* Steps */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-5">
+          {steps.map((item, index) => (
+            <div key={index} className="relative group">
+
+              {/* Connector line desktop only */}
+              {index < steps.length - 1 && (
+                <div className="hidden lg:block absolute top-10 left-[calc(100%-8px)] w-full h-px border-t-2 border-dashed border-blue-200 z-0" />
+              )}
+
+              {/* Card */}
+              <div className="relative z-10 bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-1 text-center h-full flex flex-col items-center">
+
+                {/* Step badge */}
+                <span className={`absolute -top-3 left-1/2 -translate-x-1/2 text-[11px] font-black uppercase tracking-widest text-white bg-gradient-to-r ${item.color} px-3 py-0.5 rounded-full shadow`}>
+                  Step {item.step}
+                </span>
+
+                {/* Icon */}
+                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-5 mt-3 border ${item.light} transition-all duration-300 group-hover:scale-110`}>
+                  {item.icon}
+                </div>
+
+                <h4 className="text-gray-900 font-extrabold text-base sm:text-lg mb-2 leading-tight">
+                  {item.title}
+                </h4>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  {item.description}
+                </p>
+
+                <div className={`mt-5 h-1 w-12 rounded-full bg-gradient-to-r ${item.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom CTA */}
+        {/* <div className="mt-14 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="https://wa.me/917645980320"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-bold text-sm uppercase tracking-widest px-7 py-3.5 rounded-xl shadow-lg hover:shadow-blue-400/40 hover:-translate-y-0.5 transition-all duration-200"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+            Start Your Order
+          </a>
+          <a
+            href="tel:+917645980320"
+            className="flex items-center gap-2 bg-white hover:bg-gray-50 border border-gray-200 hover:border-blue-400 text-gray-800 font-bold text-sm uppercase tracking-widest px-7 py-3.5 rounded-xl shadow-sm hover:-translate-y-0.5 transition-all duration-200"
+          >
+            <svg className="w-4 h-4 text-blue-700" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            Call Us Now
+          </a>
+        </div> */}
+
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -15,7 +15,7 @@ const VoiceAgent = () => {
   }, []);
 
   return (
-    <div>
+    <div >
       {/* ElevenLabs custom element */}
       <elevenlabs-convai agent-id="agent_0801k4tm0ap0evmrpnz4w2kddzfe"></elevenlabs-convai>
     </div>

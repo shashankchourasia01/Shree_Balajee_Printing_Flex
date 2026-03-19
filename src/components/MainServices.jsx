@@ -49,7 +49,7 @@ const services = [
 
 const MainServices = () => {
   return (
-    <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#003a75] via-[#004080] to-[#002954] overflow-hidden">
+    <section className="relative py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#003a75] via-[#004080] to-[#002954] overflow-hidden">
 
       {/* Decorative blobs */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl pointer-events-none" />
@@ -58,7 +58,7 @@ const MainServices = () => {
       <div className="relative z-10 max-w-6xl mx-auto">
 
         {/* Section Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-7">
           <span className="inline-block bg-yellow-400/15 border border-yellow-400/30 text-yellow-300 text-xs font-bold uppercase tracking-[0.2em] px-5 py-1.5 rounded-full mb-4">
             What We Do Best
           </span>
@@ -76,12 +76,20 @@ const MainServices = () => {
           </div>
         </div>
 
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {/* Swipe hint - mobile only */}
+        <div className="flex items-center justify-center gap-2 mb-4 sm:hidden">
+          <svg className="w-4 h-4 text-yellow-400/60" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+          <span className="text-yellow-400/60 text-xs font-medium tracking-wider">Swipe to explore</span>
+        </div>
+
+        {/* Cards Horizontal Scroll */}
+        <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth [-webkit-overflow-scrolling:touch] [scrollbar-width:thin] [scrollbar-color:#facc15_rgba(255,255,255,0.1)]">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-yellow-400/40 backdrop-blur-sm rounded-2xl p-5 sm:p-6 flex gap-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/20"
+              className="group relative flex-shrink-0 w-[280px] sm:w-[300px] bg-white/5 hover:bg-white/10 border border-white/10 hover:border-yellow-400/40 backdrop-blur-sm rounded-2xl p-5 flex gap-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/20 snap-start"
             >
               {/* Icon */}
               <div className="flex-shrink-0 w-11 h-11 bg-blue-100 group-hover:bg-yellow-400/20 rounded-xl flex items-center justify-center transition-colors duration-300">
@@ -107,7 +115,7 @@ const MainServices = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-14 text-center">
+        <div className="mt-7 text-center">
           <p className="text-white/50 text-sm mb-5">
             Looking for a service not listed? We handle custom orders too!
           </p>

@@ -31,7 +31,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-16 px-4 sm:px-6 lg:px-10 bg-gradient-to-b from-gray-50 to-white">
+    <section id="services" className="py-6 px-4 sm:px-6 lg:px-10 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
@@ -104,7 +104,7 @@ const Services = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-12 text-center">
+        <div className="mt-6 text-center">
           <p className="text-gray-500 text-sm mb-4">Need something custom? We've got you covered!</p>
           <a
             href="https://wa.me/917645980320"

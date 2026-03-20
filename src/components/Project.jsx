@@ -51,7 +51,7 @@ const Project = () => {
   const filtered = activeTag === 'All' ? projects : projects.filter(p => p.tag === activeTag);
 
   return (
-    <section id="project" className="bg-gradient-to-b from-white via-gray-50 to-white py-20 px-4 sm:px-6 lg:px-10">
+    <section id="project" className="bg-gradient-to-b from-white via-gray-50 to-white py-8 px-4 sm:px-6 lg:px-10">
       <div className="max-w-7xl mx-auto">
 
         {/* ── SECTION HEADER ── */}

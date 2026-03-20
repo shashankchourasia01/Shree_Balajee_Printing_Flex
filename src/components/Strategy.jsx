@@ -23,7 +23,7 @@ const Strategy = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative bg-white py-20 px-4 sm:px-6 lg:px-10 overflow-hidden">
+    <section ref={sectionRef} className="relative bg-white py-10 px-4 sm:px-6 lg:px-10 overflow-hidden">
 
       {/* Decorative background shapes */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-blue-50 rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none" />

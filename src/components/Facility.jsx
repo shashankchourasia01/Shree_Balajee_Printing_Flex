@@ -138,7 +138,7 @@ const Shop = () => {
         </div>
       </div> */}
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
 
         {/* ── SECTION HEADER ── */}
         <div className="text-center mb-12">
@@ -207,7 +207,7 @@ const Shop = () => {
         </div>
 
         {/* ── WHY CHOOSE US ── */}
-        <div className="mt-16 rounded-3xl overflow-hidden shadow-xl bg-white border border-gray-100">
+        <div className="mt-6 rounded-3xl overflow-hidden shadow-xl bg-white border border-gray-100">
           <div className="flex flex-col lg:flex-row">
 
             {/* Left — highlights */}

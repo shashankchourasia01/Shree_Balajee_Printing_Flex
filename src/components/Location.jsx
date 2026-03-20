@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaStar, FaPhone, FaClock, FaWhatsapp, FaDirections } fr
 
 const Location = () => {
   return (
-    <section id="contact" className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-10">
+    <section id="contact" className="bg-gradient-to-b from-gray-50 to-white py-4 px-4 sm:px-6 lg:px-10">
       <div className="max-w-6xl mx-auto">
 
         {/* ── SECTION HEADER ── */}

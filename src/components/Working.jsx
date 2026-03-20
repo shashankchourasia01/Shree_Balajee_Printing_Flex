@@ -38,7 +38,7 @@ const steps = [
 
 const Working = () => {
   return (
-    <section id="works" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 overflow-hidden">
+    <section id="works" className="relative py-6 px-4 sm:px-6 lg:px-8 bg-gray-50 overflow-hidden">
 
       {/* Decorative background circles */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-blue-100 rounded-full translate-x-1/2 -translate-y-1/2 blur-3xl opacity-60 pointer-events-none" />
@@ -47,7 +47,7 @@ const Working = () => {
       <div className="relative z-10 max-w-6xl mx-auto">
 
         {/* Section Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-8">
           <span className="inline-block bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-[0.2em] px-5 py-1.5 rounded-full mb-4">
             Simple & Fast
           </span>

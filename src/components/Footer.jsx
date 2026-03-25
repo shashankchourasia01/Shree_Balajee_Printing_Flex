@@ -104,7 +104,7 @@ const Footer = () => {
                 <span className="text-white font-bold text-sm">10 AM – 7 PM</span>
               </div>
               <div className="flex justify-between items-center bg-white/5 rounded-xl px-4 py-2.5 border border-white/8">
-                <span className="text-gray-400 text-sm">NOTE -</span>
+                <span className="text-gray-400 text-sm">NOTE - Order Receiving</span>
                 <span className="text-yellow-400 font-bold text-sm">Call First</span>
               </div>
             </div>

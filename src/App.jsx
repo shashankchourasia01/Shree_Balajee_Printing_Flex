@@ -9,10 +9,12 @@ import Project from './components/Project'
 import Location from './components/Location'
 import Footer from './components/Footer'
 import VoiceAgent from './components/VoiceAgent'
+import SEO from './SEO'
 
 const App = () => {
   return (
     <div >
+      <SEO />
       <Navbar />
       <VoiceAgent />
       <Services />

@@ -1,0 +1,6 @@
+# ── File: public/robots.txt ──
+# Google ko batata hai kaunse pages crawl karne hain
+
+User-agent: *
+Allow: /
+Sitemap: https://www.balajeeflex.com/sitemap.xml

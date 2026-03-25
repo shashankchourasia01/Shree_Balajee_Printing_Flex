@@ -1,30 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- File: public/sitemap.xml -->
-<!-- Google ko batata hai website ke kaunse pages hain -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- ==================== MAIN PAGES ==================== -->
+  
+  <!-- Homepage - Highest Priority -->
   <url>
     <loc>https://www.balajeeflex.com/</loc>
-    <lastmod>2025-03-20</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.balajeeflex.com/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.balajeeflex.com/hi" />
   </url>
+
+  <!-- ==================== SERVICES SECTIONS ==================== -->
+  
+  <!-- Services Section -->
   <url>
     <loc>https://www.balajeeflex.com/#services</loc>
-    <lastmod>2025-03-20</lastmod>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Main Services Section -->
+  <url>
+    <loc>https://www.balajeeflex.com/#main-services</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ==================== INDIVIDUAL SERVICE PAGES ==================== -->
+  
+  <!-- Flex Printing -->
+  <url>
+    <loc>https://www.balajeeflex.com/services/flex-printing</loc>
+    <lastmod>2025-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.balajeeflex.com/images/flex-printing.jpg</image:loc>
+      <image:title>Flex Printing Services Dhanbad</image:title>
+      <image:caption>High-quality flex printing for outdoor advertising</image:caption>
+    </image:image>
   </url>
+
+  <!-- Vinyl Printing -->
   <url>
-    <loc>https://www.balajeeflex.com/#project</loc>
-    <lastmod>2025-03-20</lastmod>
+    <loc>https://www.balajeeflex.com/services/vinyl-printing</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.balajeeflex.com/images/vinyl-printing.jpg</image:loc>
+      <image:title>Vinyl Printing Services Dhanbad</image:title>
+    </image:image>
+  </url>
+
+  <!-- Wedding Cards -->
+  <url>
+    <loc>https://www.balajeeflex.com/services/wedding-cards</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.balajeeflex.com/images/wedding-cards.jpg</image:loc>
+      <image:title>Wedding Cards Printing Dhanbad</image:title>
+    </image:image>
+  </url>
+
+  <!-- Visiting Cards -->
+  <url>
+    <loc>https://www.balajeeflex.com/services/visiting-cards</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.balajeeflex.com/images/visiting-cards.jpg</image:loc>
+      <image:title>Business Cards Printing Dhanbad</image:title>
+    </image:image>
+  </url>
+
+  <!-- Hoarding -->
+  <url>
+    <loc>https://www.balajeeflex.com/services/hoarding</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.balajeeflex.com/images/hoarding.jpg</image:loc>
+      <image:title>Hoarding Printing Services Dhanbad</image:title>
+    </image:image>
+  </url>
+
+  <!-- Digital Printing -->
+  <url>
+    <loc>https://www.balajeeflex.com/services/digital-printing</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.balajeeflex.com/images/digital-printing.jpg</image:loc>
+      <image:title>Digital Printing Services Dhanbad</image:title>
+    </image:image>
+  </url>
+
+  <!-- 3D Printing -->
+  <url>
+    <loc>https://www.balajeeflex.com/services/3d-printing</loc>
+    <lastmod>2025-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Sticker Printing -->
   <url>
-    <loc>https://www.balajeeflex.com/#contact</loc>
-    <lastmod>2025-03-20</lastmod>
+    <loc>https://www.balajeeflex.com/services/sticker-printing</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Pamphlets & Brochures -->
+  <url>
+    <loc>https://www.balajeeflex.com/services/pamphlets-brochures</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ==================== PROJECT PORTFOLIO ==================== -->
+  
+  <url>
+    <loc>https://www.balajeeflex.com/#project</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Individual Project Pages -->
+  <url>
+    <loc>https://www.balajeeflex.com/projects/cash-memo</loc>
+    <lastmod>2025-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+
+  <url>
+    <loc>https://www.balajeeflex.com/projects/restaurant-menu</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.balajeeflex.com/projects/doctor-file</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.balajeeflex.com/projects/letter-head</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.balajeeflex.com/projects/canopy-tent</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ==================== CONTACT & LOCATION ==================== -->
+  
+  <url>
+    <loc>https://www.balajeeflex.com/#contact</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.balajeeflex.com/location</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ==================== ABOUT US ==================== -->
+  
+  <url>
+    <loc>https://www.balajeeflex.com/about</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ==================== BLOG SECTION (Future) ==================== -->
+  
+  <url>
+    <loc>https://www.balajeeflex.com/blog</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.balajeeflex.com/blog/printing-tips-dhanbad</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.balajeeflex.com/blog/wedding-card-designs</loc>
+    <lastmod>2025-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>

@@ -166,7 +166,7 @@ const Location = () => {
 
               {/* CTA Buttons */}
               <div className="relative z-10 flex flex-col sm:flex-row lg:flex-col gap-3 mt-8">
-                <a
+                {/* <a
                   href="https://wa.me/917645980320?text=I'm%20interested%20in%20your%20printing%20services.%20I%20found%20you%20on%20your%20website.%20Please%20share%20details."
                   target="_blank"
                   rel="noopener noreferrer"
@@ -175,7 +175,7 @@ const Location = () => {
                 >
                   <FaWhatsapp className="text-base" aria-hidden="true" />
                   WhatsApp Us
-                </a>
+                </a> */}
                 <a
                   href="https://www.google.com/maps/place/Shree+Balajee+Printing+%26+Flex/@23.8169002,86.2936481,15z"
                   target="_blank"

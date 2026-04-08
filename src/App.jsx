@@ -1,5 +1,6 @@
-//deep
+//order page
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Services from './components/Services'
 import MainServices from './components/MainServices'
@@ -10,11 +11,13 @@ import Project from './components/Project'
 import Location from './components/Location'
 import Footer from './components/Footer'
 import VoiceAgent from './components/VoiceAgent'
+import OrderPage from './components/OrderPage'
 import SEO from './SEO'
 
-const App = () => {
+// Home Page Component - Jisme saare existing components hain
+const HomePage = () => {
   return (
-    <div className="scroll-smooth">
+    <>
       <SEO 
         title="Shree Balajee Printing & Flex | Best Printing Services in Dhanbad, Katras"
         description="No. 1 printing shop in Katras, Dhanbad. Specializing in flex printing, banners, hoarding, wedding cards, visiting cards, and digital printing. Quality guaranteed since 2010."
@@ -31,7 +34,20 @@ const App = () => {
       <Project />
       <Location />
       <Footer />
-    </div>
+    </>
+  )
+}
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <div className="scroll-smooth">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/order" element={<OrderPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   )
 }
 
@@ -41,6 +57,15 @@ export default App
 
 
 
+
+
+
+
+
+
+
+
+// //deep
 // import React from 'react'
 // import Navbar from './components/Navbar'
 // import Services from './components/Services'
@@ -56,8 +81,13 @@ export default App
 
 // const App = () => {
 //   return (
-//     <div >
-//       <SEO />
+//     <div className="scroll-smooth">
+//       <SEO 
+//         title="Shree Balajee Printing & Flex | Best Printing Services in Dhanbad, Katras"
+//         description="No. 1 printing shop in Katras, Dhanbad. Specializing in flex printing, banners, hoarding, wedding cards, visiting cards, and digital printing. Quality guaranteed since 2010."
+//         url="https://www.balajeeflex.com"
+//         image="https://www.balajeeflex.com/banner-image.jpg"
+//       />
 //       <Navbar />
 //       <VoiceAgent />
 //       <Services />
@@ -73,3 +103,5 @@ export default App
 // }
 
 // export default App
+
+

@@ -22,6 +22,7 @@ import mug from "../all_assets/letter_head.jpg";
 import tshirt from "../all_assets/letter_head.jpg";
 import canopy from '../all_assets/canopy.jpg'
 import engagementCard from '../all_assets/engagementCard.jpg'
+import envelopPri from '../all_assets/envelopPrint.jpg'
 
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -71,7 +72,7 @@ const Services = () => {
       services: [
         { title: "Visiting Card", description: "Professional cards that leave a lasting brand impression.", image: visiting, tag: "", keywords: "visiting card, business card", popular: true },
         { title: "Letterhead", description: "Professional letterheads for official communication.", image: letterhead || visiting, tag: "", keywords: "letterhead, official stationery", popular: false },
-        { title: "Envelope Printing", description: "Custom printed envelopes for business correspondence.", image: envelope || visiting, tag: "", keywords: "envelope printing, business envelope", popular: false },
+        { title: "Envelope Printing", description: "Custom printed envelopes for business correspondence.", image: envelopPri || visiting, tag: "", keywords: "envelope printing, business envelope", popular: false },
         { title: "Doctor File", description: "Customized professional files for clinics and healthcare.", image: visiting, tag: "", keywords: "doctor file, medical file", popular: false },
         { title: "Cash Memo", description: "Custom cash memo and invoice books for shops.", image: visiting, tag: "", keywords: "cash memo, invoice book", popular: false },
       ]

@@ -24,6 +24,7 @@ import canopy from '../all_assets/canopy.jpg'
 import engagementCard from '../all_assets/engagementCard.jpg'
 import envelopPri from '../all_assets/envelopPrint.jpg'
 import memo from  '../all_assets/cash_memo.jpg'
+import offsetPri from '../all_assets/offsetnew.jpg'
 
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -86,7 +87,7 @@ const Services = () => {
       services: [
         { title: "3D Printing", description: "Unique custom prints and designs for any special occasion.", image: new_d, tag: "New", keywords: "3D printing, custom 3D prints", popular: false },
         { title: "Digital Printing", description: "On-demand vibrant printing for brochures, posters & more.", image: digital, tag: "", keywords: "digital printing, on-demand printing", popular: true },
-        { title: "Offset Printing", description: "High-quality bulk printing with cost-effective results.", image: digital, tag: "", keywords: "offset printing, bulk printing", popular: false },
+        { title: "Offset Printing", description: "High-quality bulk printing with cost-effective results.", image: offsetPri, tag: "", keywords: "offset printing, bulk printing", popular: false },
         { title: "Screen Printing", description: "Durable screen printing for fabrics and promotional items.", image: tshirt || digital, tag: "", keywords: "screen printing, fabric printing", popular: false },
         { title: "Poster Printing", description: "Eye-catching posters for events and promotions.", image: digital, tag: "", keywords: "poster printing, event poster", popular: false },
       ]

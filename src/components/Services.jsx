@@ -16,9 +16,9 @@ import digital from "../all_assets/digital_p.jpeg";
 import bdayCard from '../all_assets/birthdayCard.jpg'
 import letterhead from "../all_assets/letter_head.jpg";
 import drFile from '../all_assets/doctor_file.jpg'
-import calendar from "../all_assets/letter_head.jpg";
+
 import notebook from "../all_assets/letter_head.jpg";
-import mug from "../all_assets/letter_head.jpg";
+import tshirtp from "../all_assets/tshirtPri.jpg";
 import tshirt from "../all_assets/letter_head.jpg";
 import canopy from '../all_assets/canopy.jpg'
 import engagementCard from '../all_assets/engagementCard.jpg'
@@ -30,6 +30,7 @@ import pampletP from '../all_assets/pamplet.jpg'
 import shopBoard from '../all_assets/shopbOARD.jpg'
 import singage from '../all_assets/singage.jpg'
 import diary from '../all_assets/diary.jpg'
+import shield from '../all_assets/shield.webp'
 
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -119,8 +120,8 @@ const Services = () => {
         { title: "Sticker Printing", description: "Custom sticker prints for any purpose or occasion.", image: sticker, tag: "", keywords: "sticker printing, custom stickers", popular: false },
         { title: "Diary Printing", description: "Custom Diary for branding and gifting.", image: diary || sticker, tag: "", keywords: "diary printing, custom diary", popular: false },
         { title: "Book Printing", description: "Branded books and diaries for corporate gifting.", image: notebook || sticker, tag: "", keywords: "notebook printing, diary printing", popular: false },
-        { title: "Shield & Momento", description: "Custom printed mugs for promotions and gifts.", image: mug || sticker, tag: "", keywords: "mug printing, custom mug", popular: false },
-        { title: "T-Shirt Printing", description: "Custom t-shirt printing for events and branding.", image: tshirt || sticker, tag: "", keywords: "t-shirt printing, custom apparel", popular: false },
+        { title: "Shield & Momento", description: "Custom printed Shield for gifts and events.", image: shield || sticker, tag: "", keywords: "mug printing, custom mug", popular: false },
+        { title: "T-Shirt Printing", description: "Custom t-shirt printing for events and branding.", image: tshirtp || sticker, tag: "", keywords: "t-shirt printing, custom apparel", popular: false },
       ]
     }
   ];

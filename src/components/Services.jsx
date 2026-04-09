@@ -13,7 +13,7 @@ import all_card from "../all_assets/all_cards.avif";
 import pamplet from "../all_assets/pamplets.jpg";
 import sticker from "../all_assets/sticker.avif";
 import digital from "../all_assets/digital_p.jpeg";
-import banner from "../all_assets/digital_p.jpeg";
+import bdayCard from '../all_assets/birthdayCard.jpg'
 import letterhead from "../all_assets/letter_head.jpg";
 import envelope from "../all_assets/letter_head.jpg";
 import calendar from "../all_assets/letter_head.jpg";
@@ -58,7 +58,7 @@ const Services = () => {
       services: [
         { title: "Shadi Card", description: "Elegant personalized wedding invitations with premium finish.", image: shadi_card, tag: "Trending", keywords: "wedding cards, shadi card", popular: true },
         { title: "Invitation Cards", description: "All types of invitation cards for weddings, birthdays & events.", image: all_card, tag: "", keywords: "invitation cards, event invitations", popular: true },
-        { title: "Birthday Invitation", description: "Fun and creative birthday party invitations.", image: all_card, tag: "", keywords: "birthday invitation, party cards", popular: false },
+        { title: "Birthday Invitation", description: "Fun and creative birthday party invitations.", image: bdayCard, tag: "", keywords: "birthday invitation, party cards", popular: false },
         { title: "Engagement Card", description: "Beautiful engagement and roka ceremony invitations.", image: shadi_card, tag: "", keywords: "engagement card, roka card", popular: false },
       ]
     },

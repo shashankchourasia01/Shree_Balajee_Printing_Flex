@@ -20,6 +20,7 @@ import calendar from "../all_assets/letter_head.jpg";
 import notebook from "../all_assets/letter_head.jpg";
 import mug from "../all_assets/letter_head.jpg";
 import tshirt from "../all_assets/letter_head.jpg";
+import canopy from '../all_assets/canopy.jpg'
 
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -45,8 +46,8 @@ const Services = () => {
         { title: "Flex Printing", description: "Large-format prints perfect for outdoor advertising & events.", image: flex, tag: "Popular", keywords: "flex printing, outdoor advertising", popular: true },
         { title: "Vinyl Printing", description: "High-quality vinyl prints that withstand harsh weather conditions.", image: vnyl, tag: "", keywords: "vinyl printing, weather resistant", popular: false },
         { title: "Hoarding", description: "Bold, eye-catching hoarding prints for outdoor brand promotions.", image: hoarding, tag: "", keywords: "hoarding printing, billboard", popular: false },
-        { title: "Banner Printing", description: "Custom banners for events, shops, and promotions.", image: banner || flex, tag: "", keywords: "banner printing, event banner", popular: true },
-        { title: "Canopy Tent", description: "Custom printed tents for exhibitions and outdoor events.", image: flex, tag: "New", keywords: "canopy tent, outdoor tent", popular: false },
+        // { title: "Banner Printing", description: "Custom banners for events, shops, and promotions.", image: banner || flex, tag: "", keywords: "banner printing, event banner", popular: true },
+        { title: "Canopy Tent", description: "Custom printed tents for exhibitions and outdoor events.", image: canopy, tag: "New", keywords: "canopy tent, outdoor tent", popular: false },
       ]
     },
     {

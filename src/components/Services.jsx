@@ -21,6 +21,7 @@ import notebook from "../all_assets/letter_head.jpg";
 import mug from "../all_assets/letter_head.jpg";
 import tshirt from "../all_assets/letter_head.jpg";
 import canopy from '../all_assets/canopy.jpg'
+import engagementCard from '../all_assets/engagementCard.jpg'
 
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -59,7 +60,7 @@ const Services = () => {
         { title: "Shadi Card", description: "Elegant personalized wedding invitations with premium finish.", image: shadi_card, tag: "Trending", keywords: "wedding cards, shadi card", popular: true },
         { title: "Invitation Cards", description: "All types of invitation cards for weddings, birthdays & events.", image: all_card, tag: "", keywords: "invitation cards, event invitations", popular: true },
         { title: "Birthday Invitation", description: "Fun and creative birthday party invitations.", image: bdayCard, tag: "", keywords: "birthday invitation, party cards", popular: false },
-        { title: "Engagement Card", description: "Beautiful engagement and roka ceremony invitations.", image: shadi_card, tag: "", keywords: "engagement card, roka card", popular: false },
+        { title: "Engagement Card", description: "Beautiful engagement and roka ceremony invitations.", image: engagementCard, tag: "", keywords: "engagement card, roka card", popular: false },
       ]
     },
     {

@@ -9,7 +9,7 @@ import visiting_card from "../all_assets/new_visiting.jpg";
 import menu          from "../all_assets/restaurent_img.jpg";
 import stand_board   from "../all_assets/stand_board.jpeg";
 import light_frame   from "../all_assets/light_frame.jpg";
-import offset        from "../all_assets/offset.jpg";
+import offset        from "../all_assets/offsetnew.jpg";
 import dr_file       from "../all_assets/doctor_file.jpg";
 import letter_head   from "../all_assets/letter_head.jpg";
 import screen_pr     from "../all_assets/screen_printing.jpg";

@@ -25,6 +25,10 @@ import engagementCard from '../all_assets/engagementCard.jpg'
 import envelopPri from '../all_assets/envelopPrint.jpg'
 import memo from  '../all_assets/cash_memo.jpg'
 import offsetPri from '../all_assets/offsetnew.jpg'
+import screenPrinting from '../all_assets/screen_printing.jpg'
+import pampletP from '../all_assets/pamplet.jpg'
+import shopBoard from '../all_assets/shopbOARD.jpg'
+import singage from '../all_assets/singage.jpg'
 
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -88,8 +92,8 @@ const Services = () => {
         { title: "3D Printing", description: "Unique custom prints and designs for any special occasion.", image: new_d, tag: "New", keywords: "3D printing, custom 3D prints", popular: false },
         { title: "Digital Printing", description: "On-demand vibrant printing for brochures, posters & more.", image: digital, tag: "", keywords: "digital printing, on-demand printing", popular: true },
         { title: "Offset Printing", description: "High-quality bulk printing with cost-effective results.", image: offsetPri, tag: "", keywords: "offset printing, bulk printing", popular: false },
-        { title: "Screen Printing", description: "Durable screen printing for fabrics and promotional items.", image: tshirt || digital, tag: "", keywords: "screen printing, fabric printing", popular: false },
-        { title: "Poster Printing", description: "Eye-catching posters for events and promotions.", image: digital, tag: "", keywords: "poster printing, event poster", popular: false },
+        { title: "Screen Printing", description: "Durable screen printing for fabrics and promotional items.", image: screenPrinting || digital, tag: "", keywords: "screen printing, fabric printing", popular: false },
+        { title: "Pamplet Printing", description: "Eye-catching Pamplet for events and promotions.", image: pampletP, tag: "", keywords: "poster printing, event poster", popular: false },
       ]
     },
     {
@@ -100,8 +104,8 @@ const Services = () => {
       services: [
         { title: "Light Board", description: "Vibrant, durable light boards ideal for shops & showrooms.", image: light_board, tag: "", keywords: "light board, illuminated signage", popular: false },
         { title: "Standee Frame", description: "Portable stand boards perfect for events & storefront displays.", image: stand_board, tag: "", keywords: "standee, stand board", popular: false },
-        { title: "Shop Board", description: "Custom shop front signage and name boards.", image: light_board, tag: "", keywords: "shop board, name board", popular: false },
-        { title: "Acrylic Signage", description: "Premium acrylic signs for modern businesses.", image: light_board, tag: "", keywords: "acrylic signage, modern sign", popular: false },
+        { title: "Shop Board", description: "Custom shop front signage and name boards.", image: shopBoard, tag: "", keywords: "shop board, name board", popular: false },
+        { title: "Acrylic Signage", description: "Premium acrylic signs for modern businesses.", image: singage, tag: "", keywords: "acrylic signage, modern sign", popular: false },
       ]
     },
     {

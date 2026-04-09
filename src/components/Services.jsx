@@ -29,6 +29,7 @@ import screenPrinting from '../all_assets/screen_printing.jpg'
 import pampletP from '../all_assets/pamplet.jpg'
 import shopBoard from '../all_assets/shopbOARD.jpg'
 import singage from '../all_assets/singage.jpg'
+import diary from '../all_assets/diary.jpg'
 
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -116,9 +117,9 @@ const Services = () => {
       services: [
         { title: "Pamphlets & Brochures", description: "Professionally designed pamphlets for marketing.", image: pamplet, tag: "", keywords: "pamphlet, brochure", popular: true },
         { title: "Sticker Printing", description: "Custom sticker prints for any purpose or occasion.", image: sticker, tag: "", keywords: "sticker printing, custom stickers", popular: false },
-        { title: "Calendar Printing", description: "Custom calendars for branding and gifting.", image: calendar || sticker, tag: "", keywords: "calendar printing, custom calendar", popular: false },
-        { title: "Notebook Printing", description: "Branded notebooks and diaries for corporate gifting.", image: notebook || sticker, tag: "", keywords: "notebook printing, diary printing", popular: false },
-        { title: "Mug Printing", description: "Custom printed mugs for promotions and gifts.", image: mug || sticker, tag: "", keywords: "mug printing, custom mug", popular: false },
+        { title: "Diary Printing", description: "Custom Diary for branding and gifting.", image: diary || sticker, tag: "", keywords: "diary printing, custom diary", popular: false },
+        { title: "Book Printing", description: "Branded books and diaries for corporate gifting.", image: notebook || sticker, tag: "", keywords: "notebook printing, diary printing", popular: false },
+        { title: "Shield & Momento", description: "Custom printed mugs for promotions and gifts.", image: mug || sticker, tag: "", keywords: "mug printing, custom mug", popular: false },
         { title: "T-Shirt Printing", description: "Custom t-shirt printing for events and branding.", image: tshirt || sticker, tag: "", keywords: "t-shirt printing, custom apparel", popular: false },
       ]
     }
